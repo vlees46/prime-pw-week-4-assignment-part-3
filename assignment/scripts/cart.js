@@ -7,19 +7,12 @@ let basket = [];
 function addItem(item){
 
 if (basket.push(item)) {
-
     return true
 }
 else {
     return false;
+ }
 }
-}
-console.log(`Basket is ${basket}`);
-console.log('Adding pizza', addItem('pizza'));
-console.log('Adding pizza', addItem('nachos'));
-console.log('Adding pizza', addItem('frys'));
-console.log(`Basket is now ${basket}`);
-
 
 function listItems (){
 
@@ -29,4 +22,18 @@ function listItems (){
 
     }
 }
+
+function empty() {
+
+    basket = basket = [];
+    
+}
+
+console.log(`Basket is ${basket}`);
+console.log('Adding pizza', addItem('pizza'));
+console.log('Adding nachos', addItem('nachos'));
+console.log('Adding frys', addItem('frys'));
+console.log(`Basket is now ${basket}`);
 listItems();
+empty();
+console.log(`Basket is now empty ${basket}`, empty());
